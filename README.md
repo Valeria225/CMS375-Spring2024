@@ -6,5 +6,37 @@ Valeria Escobar, Avery Miller, Angie Lam
 - Programmer - Valeria, Avery, Angie 
 - Designer - Avery
 
-4. abstract ( project name, the project's purpose, the target user, the data to use, etc.)
+
+Abstract
+Project name:
+Project's purpose: Provide a central data hub for all traditional daily operations in a restaurant.
+Target user: Local, non-chain restaurants 
+Data to use:
+  Employee Table
+    Name
+    Address
+    Date of Birth
+    SSN
+    Salary
+
+  Scheduling
+    Employee name
+    Shift length
+    Shift start time
+    Shift end time
+    Break
+
+  Inventory 
+    Item name
+    Total in stock
+    Stock location
+    Total upcoming shipments
+    Schedule for ordering
+
+  Menu
+    Dish name
+    Price
+    Amount ordered in the past 24 hours
+    Amount ordered in the past week
+    Amount ordered in the past month
 
