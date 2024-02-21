@@ -1,5 +1,5 @@
 # CMS375-Spring2024
-1. 
+1. From the Hearth
 
 Valeria Escobar, Avery Miller, Angie Lam
 - Team Lead - Valeria 
@@ -8,7 +8,7 @@ Valeria Escobar, Avery Miller, Angie Lam
 
 
 Abstract
-Project name:
+Project name: Hestia
 Project's purpose: Provide a central data hub for all traditional daily operations in a restaurant.
 Target user: Local, non-chain restaurants 
 Data to use:
