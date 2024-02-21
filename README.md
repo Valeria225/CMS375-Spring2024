@@ -1,5 +1,5 @@
 # CMS375-Spring2024
-1. From the Hearth
+1. From the Hearth 
 
 Valeria Escobar, Avery Miller, Angie Lam
 - Team Lead - Valeria 
