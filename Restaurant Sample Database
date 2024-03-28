@@ -2,6 +2,7 @@ drop database if exists restaurant;
 create database restaurant;
 use restaurant;
 
+//Angie
 create table Employee (
 	name varchar(200),
 	address varchar(200),
@@ -18,6 +19,7 @@ create table Scheduling (
     break int
 );
 
+//Valeria
 create table Inventory(
 itemName varchar(30),
 totalStock int,
@@ -52,6 +54,7 @@ insert into Menu (dishName, price, weeklySales, dailySales, monthlySales)values
     ('Pepperoni Pizza', 22.75, 70, 10,110);
 
 
+//Angie
 -- Insert sample data into the Employee table
 insert into Employee (name, address, dateOfBirth, ssn, salary) values
 ('John Doe', '123 Maple Street', '1990-05-15', '123-45-6789', '50000'),
