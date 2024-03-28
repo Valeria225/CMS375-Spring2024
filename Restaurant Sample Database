@@ -30,10 +30,10 @@ orderSchedule varchar(50)
 
 create table Menu(
 dishName varchar(100),
-price numeric(8,2),
-weeklySales numeric(1,0),
-dailySales numeric(1.0),
-monthlySales numeric(1,0)
+price int(100),
+weeklySales int(100),
+dailySales int(100),
+monthlySales int(100)
 );
 -- Sample data for Inventory table
 insert into Inventory (itemName, totalStock, location, upcomingShipments, orderSchedule) values 
