@@ -1,0 +1,79 @@
+drop database if exists restaurant; 
+create database restaurant;
+use restaurant;
+
+create table Employee (
+	name varchar(200),
+	address varchar(200),
+    dateOfBirth date,
+    ssn varchar(11),
+    salary varchar(200)
+);
+
+create table Scheduling (
+	employeeName varchar(200),
+    shiftLength int,
+    shiftStartTime time,
+    shiftEndTime time,
+    break int
+);
+
+create table Inventory(
+itemName varchar(30),
+totalStock int,
+location varchar(50),
+upcomingShipments varchar(50),
+orderSchedule varchar(50)
+);
+
+create table Menu(
+dishName varchar(100),
+price numeric(8,2),
+weeklySales numeric(1,0),
+dailySales numeric(1.0),
+monthlySales numeric(1,0)
+);
+-- Sample data for Inventory table
+insert into Inventory (itemName, totalStock, location, upcomingShipments, orderSchedule) values 
+    ('Apple', 100, 'Warehouse A', '10 crates arriving next week', 'Order every Monday'),
+    ('Banana', 150, 'Warehouse B', '20 boxes arriving tomorrow', 'Order every Thursday'),
+    ('Flour', 88,'Main Fridge', '30 bags arriving next week', 'Order every Wednesday'),
+    ('Eggs', 170, 'Main Fridge', '120 dozen arriving next week', 'Order every Monday'),
+    ('Tomatos', 100, 'Side Fridge', '15 boxes arriving next week', 'Order every Monday and Friday'),
+    ('Orange', 80, 'Warehouse C', '15 crates arriving next month', 'Order every Friday');
+
+-- Sample data for Menu table
+insert into Menu (dishName, price, weeklySales, dailySales, monthlySales)values
+    ('Spaghetti Bolognese', 12.99, 50, 7, 200),
+    ('Chicken Caesar Salad', 9.99, 30, 5, 120),
+    ('Grilled Salmon', 16.99, 40, 6, 160),
+    ('Hawaiian Pizza', 21.99, 50, 5, 100),
+    ('Blanca Pizza', 20.50, 35, 4, 88),
+    ('Pepperoni Pizza', 22.75, 70, 10,110);
+
+
+-- Insert sample data into the Employee table
+insert into Employee (name, address, dateOfBirth, ssn, salary) values
+('John Doe', '123 Maple Street', '1990-05-15', '123-45-6789', '50000'),
+('Jane Smith', '456 Oak Avenue', '1988-11-30', '987-65-4321', '52000'),
+('Emily Johnson', '789 Pine Lane', '1992-07-22', '111-22-3333', '48000'),
+('Michael Brown', '101 Elm Road', '1985-02-17', '222-33-4444', '51000'),
+('Chloe Davis', '202 Birch Boulevard', '1993-03-05', '555-66-7777', '53000'),
+('David Wilson', '303 Cedar Street', '1987-08-19', '888-99-0000', '49500'),
+('Olivia Martinez', '404 Spruce Way', '1991-12-09', '666-77-8888', '50500'),
+('Ethan Anderson', '505 Redwood Circle', '1989-04-23', '999-00-1111', '52000'),
+('Sophia Thomas', '606 Willow Court', '1994-01-16', '333-44-5555', '51000'),
+('James Jackson', '707 Palm Drive', '1986-09-07', '444-55-6666', '50000');
+
+-- Insert sample data into the Scheduling table
+insert into Scheduling (employeeName, shiftLength, shiftStartTime, shiftEndTime, break) values
+('John Doe', 8, '08:00', '16:00', 30),
+('Jane Smith', 8, '09:00', '17:00', 30),
+('Emily Johnson', 6, '10:00', '16:00', 15),
+('Michael Brown', 8, '14:00', '22:00', 30),
+('Chloe Davis', 4, '18:00', '22:00', 0),
+('David Wilson', 8, '07:00', '15:00', 30),
+('Olivia Martinez', 5, '12:00', '17:00', 15),
+('Ethan Anderson', 6, '16:00', '22:00', 15),
+('Sophia Thomas', 8, '08:00', '16:00', 30),
+('James Jackson', 10, '08:00', '18:00', 45);
