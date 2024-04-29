@@ -7,6 +7,7 @@
 <head>
   <title>From the Hearth</title>
 </head>
+
 <body style="text-align:center;" bgcolor="#f2d6b3">
 
   <h1 style="color:Orange;">From The Hearth</h1>
@@ -14,6 +15,7 @@
   <img src="Pasted Graphic.png" alt="Logo" width="200" height="150" />
   
   <!-- Search form -->
+  <h2 style="color:Orange;"> Find Employee</h2>
   <form method="GET">
     <label for="search">Enter name:</label>
     <input type="text" id="search" name="search">
@@ -73,10 +75,22 @@
 <!-- Delete Employee Form -->
 <h2 style="color:Orange";> Delete Employee from System</h2>
 <form action="delete_employee.php" method="get">
-        Employee Name: <input type="text" name="employee_name"><br><br>
-        <input type="submit" value="Delete Employee">
+        <label for="employee_name">Employee Name:</label>
+        <input type="text" id="employee_name" name="employee_name">
+        <button type="submit">Delete Employee</button>
+    </form>
+
+<!-- Update Employee Form-->
+<h2 style="color:Orange";> Update Employee</h2>
+<form action="update_employee.php" method="GET">
+        <label for="employee_name">Employee Name:</label>
+        <input type="text" id="employee_name" name="employee_name">
+        <label for="new_name">New Name:</label>
+        <input type="text" id="new_name" name="new_name">
+        <button type="submit">Update Employee</button>
     </form>
 
   
 </body>
 </html>
+
